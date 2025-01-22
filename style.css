@@ -1,0 +1,195 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background-color: #e6ca3e;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Main Container Styling */
+section {
+    background: radial-gradient(circle, #ffefd5, #ffe4b5);
+    border: 10px solid #ff4500;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #4d97eb;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(to bottom, #3cb2ed, #ee5fb0);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Layout (Circular Positioning) */
+#noun1 {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#verb {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#adjective {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#noun2 {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#setting {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to bottom, #32cd32, #228b22);
+}
+
+/* Story Output */
+#story {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff4500;
+    margin-top: 20px;
+}
+
+/* ID Styling */
+#studentId {
+    font-size: 0.8rem;
+    color: #555;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        width: 300px;
+        height: 300px;
+    }
+
+    button {
+        width: 60px;
+        height: 60px;
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    #story {
+        font-size: 1rem;
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+#story-buttons,
+#action-buttons {
+    margin: 10px 0;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+#main-buttons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#story-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#side-button {
+    margin-left: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+#action-buttons button {
+    margin: 5px;
+}
